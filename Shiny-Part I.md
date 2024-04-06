@@ -904,7 +904,7 @@ output$greeting <- renderText({
 
 #### 3.3.1 Imperative vs declarative programming
 
-命令和食谱之间的这种差异是两种重要编程风格之间的关键区别之一：
+命令和声明之间的这种差异是两种重要编程风格之间的关键区别之一：
 
 - 在**命令式（imperative）**编程中，您发出特定命令，并立即执行。这是您在分析脚本中习惯的编程风格：您命令R加载数据，转换数据，可视化数据，并将结果保存到磁盘。
 - 在**声明性（declarative）**编程中，您表达更高层次的目标或描述重要的制约因素，并依靠他人来决定如何和/或何时将其转化为行动。这是你在Shiny中使用的编程风格。
@@ -1297,9 +1297,9 @@ server <- function(input, output, session) {
 
 这会生成图[3.10](https://mastering-shiny.org/basic-reactivity.html#fig:sim)所示的应用程序和图[3.11](https://mastering-shiny.org/basic-reactivity.html#fig:sim-react)所示的反应图。
 
-<img src="https://d33wubrfki0l68.cloudfront.net/ceed7209822edad11d811e6ad501f2e1cea7fb0d/b35bb/demos/basic-reactivity/simulation-2.png" alt="一个更简单的应用程序，显示从两个泊松分布中提取的随机数的频率多边形。在<https://hadley.shinyapps.io/ms-simulation-2 style="zoom:33%;" >上观看直播。" />
+<img src="https://d33wubrfki0l68.cloudfront.net/ceed7209822edad11d811e6ad501f2e1cea7fb0d/b35bb/demos/basic-reactivity/simulation-2.png" alt="8" style="zoom:50%;" />
 
-图3.10：一个更简单的应用程序，显示从两个泊松分布中抽取的随机数的频率分布图。在[https://hadley.shinyapps.io/ms-simulation-2上](https://hadley.shinyapps.io/ms-simulation-2)观看动态效果。
+图3.10：一个更简单的应用程序，显示从两个泊松分布中提取的随机数的频率分布图。在[https://hadley.shinyapps.io/ms-simulation-2上](https://hadley.shinyapps.io/ms-simulation-2)观看动态效果。
 
 <img src="https://d33wubrfki0l68.cloudfront.net/233a16963b00b9e879f225bc17a918afbad91e15/32c89/diagrams/basic-reactivity/timing.png" alt="反应图" style="zoom:33%;" />
 

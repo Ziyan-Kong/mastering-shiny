@@ -1311,8 +1311,8 @@ nearPoints(mtcars, input$plot_click)
 
 另一种使用`nearPoints()`的方法是使用`allRows = TRUE`和`addDist = TRUE`。这将返回带有两个新列的原始数据框：
 
-- `dist_`给出行和事件之间的距离（以像素为单位）。
-- `selected_`表明它是否靠近点击事件（即当`allRows = FALSE)`，它是否会返回一行）。
+- `dist_`给出行和事件之间的距离（以像素为单位）。换句话说，当addDist=TRUE时，将返回所有行（用于绘图的x和y组成的点）到该点击事件坐标的距离，是一个与行数相等的距离值向量；否则，只返回一行距离点击事件最近的行（形成的数据框）。
+- `selected_`表明它是否靠近点击事件（即当`allRows = FALSE`，它是否会返回一行）。换句话说，当allRows=TRUE时，将返回一个与行数相等的逻辑值向量，TRUE表示被选中，FALSE表示未被选中；否则，只返回选中行的数据框。
 
 我们稍后会看到一个例子。
 
@@ -1486,7 +1486,9 @@ server <- function(input, output, session) {
 }
 ```
 
-![您可以使绘图大小动态，以便它响应用户操作。这张图显示了改变宽度的效果。在<https://hadley.shinyapps.io/ms-resize>上观看直播。](https://d33wubrfki0l68.cloudfront.net/187b93086b15e4f5f6afe04cb609019d1a37b424/537a6/demos/action-graphics/resize-narrow.png)![您可以使绘图大小动态，以便它响应用户操作。这张图显示了改变宽度的效果。在<https://hadley.shinyapps.io/ms-resize>上观看直播。](https://d33wubrfki0l68.cloudfront.net/46c07091eaf6a8cd82a342e6fc55692e54740b7c/d0566/demos/action-graphics/resize-wide.png)
+<img src="https://d33wubrfki0l68.cloudfront.net/187b93086b15e4f5f6afe04cb609019d1a37b424/537a6/demos/action-graphics/resize-narrow.png" alt="8" style="zoom:50%;" />
+
+<img src="https://d33wubrfki0l68.cloudfront.net/46c07091eaf6a8cd82a342e6fc55692e54740b7c/d0566/demos/action-graphics/resize-wide.png" alt="8" style="zoom:50%;" />
 
 图7.6：您可以使绘图大小动态变化，使其响应用户操作。这张图显示了改变宽度的效果。在[https://hadley.shinyapps.io/ms-resize上](https://hadley.shinyapps.io/ms-resize)观看动态。
 
@@ -2272,7 +2274,7 @@ server <- function(input, output, session) {
 }
 ```
 
-![这个简单的应用程序可以让您确切地查看Shiny为上传的文件提供的数据。在<https://hadley.shinyapps.io/ms-upload>上观看直播。](https://d33wubrfki0l68.cloudfront.net/31fddd4b87d0e36141c7b8cbb2dd240f8c2d26d1/026fa/demos/action-transfer/upload.png)
+![8](https://d33wubrfki0l68.cloudfront.net/31fddd4b87d0e36141c7b8cbb2dd240f8c2d26d1/026fa/demos/action-transfer/upload.png)
 
 图9.1：这个简单的应用程序可以让您确切地看到Shiny为上传的文件计算了一些文件信息，并将文件保存在临时目录中。在[https://hadley.shinyapps.io/ms-upload](https://hadley.shinyapps.io/ms-upload)观看动态。
 
