@@ -1557,7 +1557,7 @@ server <- function(input, output, session) {
 
 ## Chapter 8. User feedback
 
-通过让用户更深入地了解正在发生的事情来使您的应用程序更易于使用。比如，当输入没有意义时，以消息的形式的展示到前段。当运行的程序，所需时间比较长时，以进度条的方式展示进度等。本章的目标是向您展示一些常用的用户反馈选项。
+通过让用户更深入地了解正在发生的事情来使您的应用程序更易于使用。比如，当输入没有意义时，以消息的形式展示到前端。当运行的程序，所需时间比较长时，以进度条的方式展示进度等。本章的目标是向您展示一些常用的用户反馈选项。
 
 我们将从**验证**技术开始，当输入（或输入组合）处于无效状态时通知用户。我们也可以向用户发送一般消息和**进度条**，这些进度条提供了由许多小步骤组成的耗时操作的详细信息。最后，我们将讨论一些危险操作的提醒信息，这样您可以通过**确认**对话框或**撤销**操作的决定是否执行该危险操作。
 
@@ -1675,7 +1675,11 @@ server <- function(input, output, session) {
 }
 ```
 
-![通过使用`req()`，仅在提供语言和名称后显示输出，请参阅<https://hadley.shinyapps.io/ms-require-simple2>。](https://d33wubrfki0l68.cloudfront.net/d6a1e82924f2cf77fca63f35b2805e4392377700/e8a89/demos/action-feedback/require-simple2-on-load.png)![通过使用`req()`，仅在提供语言和名称后显示输出，请参阅<https://hadley.shinyapps.io/ms-require-simple2>。](https://d33wubrfki0l68.cloudfront.net/e8048494af9066952f69e4c7e9ec06c826202c34/4933a/demos/action-feedback/require-simple2-langauge.png)![通过使用`req()`，仅在提供语言和名称后显示输出，请参阅<https://hadley.shinyapps.io/ms-require-simple2>。](https://d33wubrfki0l68.cloudfront.net/5c0d55e52be17b4fc4d52ace8b6bbdc6cdddba86/4d3df/demos/action-feedback/require-simple2-name.png)
+![8](https://d33wubrfki0l68.cloudfront.net/d6a1e82924f2cf77fca63f35b2805e4392377700/e8a89/demos/action-feedback/require-simple2-on-load.png)
+
+![8](https://d33wubrfki0l68.cloudfront.net/e8048494af9066952f69e4c7e9ec06c826202c34/4933a/demos/action-feedback/require-simple2-langauge.png)
+
+![8](https://d33wubrfki0l68.cloudfront.net/5c0d55e52be17b4fc4d52ace8b6bbdc6cdddba86/4d3df/demos/action-feedback/require-simple2-name.png)
 
 图8.3：通过使用`req()`，提供语言和名称后才会显示输出，见https://hadley.shinyapps.io/ms-require-simple2。
 
